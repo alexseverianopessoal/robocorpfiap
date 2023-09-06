@@ -1,0 +1,4 @@
+DataPesquisa; Destino; IDA; VOLTA; HORARIO; CIA; TIME_VOO; DIRECAO; PARADAS; TIME_CONEXAO; EMISSAOCO2; ECONOMIAEMISSAOCO2; VALOR; COTACAO
+2023-09-05 20:19:11.142;Dublin;Thu, Sep 07;Sat, Sep 16;9:45 AM-8:45 AM+1;Delta;19 hr;GRU–DUB;1 stop;1 hr 35 min ATL;737 kg CO2;+20% emissions;R$8,147;round trip;
+2023-09-05 20:19:11.142;Dublin;Thu, Sep 07;Sat, Sep 16;9:30 PM-10:20 AM+2;United;32 hr 50 min;GRU–DUB;1 stop;15 hr 50 min IAD;915 kg CO2;+49% emissions;R$10,991;round trip;
+2023-09-05 20:19:11.142;Dublin;Thu, Sep 07;Sat, Sep 16;6:15 PM-4:45 PM+1;Lufthansa;18 hr 30 min;GRU–DUB;1 stop;4 hr 55 min FRA;840 kg CO2;+37% emissions;R$12,144;round trip;

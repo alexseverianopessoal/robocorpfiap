@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230829 15:01:03.162" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="/Users/alex.severiano/.vscode/extensions/robocorp.robotframework-lsp-1.11.0/src/robotframework_ls/vendored/robotframework_interactive/robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open Available Browser">
+<arg>https://www.google.com/travel/flights/search?tfs=CBwQAhokEgoyMDI0LTA3LTExag0IAhIJL20vMDIycGZtcgcIARIDRFVCGiQSCjIwMjQtMDctMTdqBwgBEgNEVUJyDQgCEgkvbS8wMjJwZm1AAUgBcAGCAQsI____________AZgBAQ&amp;hl=pt-BR</arg>
+<msg timestamp="20230829 15:01:03.998" level="FAIL">No keyword with name 'Open Available Browser' found.</msg>
+<status status="FAIL" starttime="20230829 15:01:03.998" endtime="20230829 15:01:03.998"/>
+</kw>
+<kw name="Does Page Contain">
+<arg>class:Rk10dc</arg>
+<status status="NOT RUN" starttime="20230829 15:01:04.000" endtime="20230829 15:01:04.000"/>
+</kw>
+<kw name="Get Text">
+<var>${dados}</var>
+<arg>class:Rk10dc</arg>
+<status status="NOT RUN" starttime="20230829 15:01:04.001" endtime="20230829 15:01:04.001"/>
+</kw>
+<kw name="Split String">
+<var>${split}</var>
+<arg>${dados}</arg>
+<arg>${\n}</arg>
+<status status="NOT RUN" starttime="20230829 15:01:04.003" endtime="20230829 15:01:04.003"/>
+</kw>
+<kw name="Create File">
+<arg>${TEXT_FILE}</arg>
+<arg>aaa</arg>
+<arg>overwrite=True</arg>
+<status status="NOT RUN" starttime="20230829 15:01:04.005" endtime="20230829 15:01:04.005"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${VAR}</var>
+<arg>1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.005" endtime="20230829 15:01:04.005"/>
+</kw>
+<for flavor="IN">
+<var>${col}</var>
+<value>@{split}</value>
+<iter>
+<var name="${col}"/>
+<if>
+<branch type="IF" condition="${VAR} == 1">
+<kw name="${HORARIO} = 2">
+<status status="NOT RUN" starttime="20230829 15:01:04.008" endtime="20230829 15:01:04.008"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.006" endtime="20230829 15:01:04.008"/>
+</branch>
+<branch type="ELSE IF" condition="${VAR} == 2">
+<kw name="Log" library="BuiltIn">
+<arg>This line is NOT executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.008" endtime="20230829 15:01:04.008"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.008" endtime="20230829 15:01:04.008"/>
+</branch>
+<branch type="ELSE IF" condition="${VAR} == 3">
+<kw name="Log" library="BuiltIn">
+<arg>This line is NOT executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.008" endtime="20230829 15:01:04.008"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.008" endtime="20230829 15:01:04.008"/>
+</branch>
+<branch type="ELSE IF" condition="${VAR} == 4">
+<kw name="Log" library="BuiltIn">
+<arg>This line IS executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.008" endtime="20230829 15:01:04.008"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.008" endtime="20230829 15:01:04.008"/>
+</branch>
+<branch type="ELSE IF" condition="${VAR} == 5">
+<kw name="Log" library="BuiltIn">
+<arg>This line IS executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.008" endtime="20230829 15:01:04.008"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.008" endtime="20230829 15:01:04.008"/>
+</branch>
+<branch type="ELSE IF" condition="${VAR} == 6">
+<kw name="Log" library="BuiltIn">
+<arg>This line is NOT executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.009" endtime="20230829 15:01:04.009"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.009" endtime="20230829 15:01:04.009"/>
+</branch>
+<branch type="ELSE IF" condition="${VAR} == 7">
+<kw name="Log" library="BuiltIn">
+<arg>This line IS executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.009" endtime="20230829 15:01:04.010"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.009" endtime="20230829 15:01:04.010"/>
+</branch>
+<branch type="ELSE IF" condition="${VAR} == 8">
+<kw name="Log" library="BuiltIn">
+<arg>This line IS executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.010" endtime="20230829 15:01:04.011"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.010" endtime="20230829 15:01:04.011"/>
+</branch>
+<branch type="ELSE IF" condition="${VAR} == 9">
+<kw name="Log" library="BuiltIn">
+<arg>This line is NOT executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.011" endtime="20230829 15:01:04.011"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.011" endtime="20230829 15:01:04.011"/>
+</branch>
+<branch type="ELSE IF" condition="${VAR} == 10">
+<kw name="Log" library="BuiltIn">
+<arg>This line IS executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.011" endtime="20230829 15:01:04.011"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.011" endtime="20230829 15:01:04.011"/>
+</branch>
+<branch type="ELSE IF" condition="${VAR} == 11">
+<kw name="Log" library="BuiltIn">
+<arg>This line IS executed.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.011" endtime="20230829 15:01:04.011"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.011" endtime="20230829 15:01:04.011"/>
+</branch>
+<branch type="ELSE IF" condition="${VAR} == 12">
+<kw name="Append To File">
+<arg>${TEXT_FILE}</arg>
+<arg>World!</arg>
+<status status="NOT RUN" starttime="20230829 15:01:04.012" endtime="20230829 15:01:04.012"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.011" endtime="20230829 15:01:04.012"/>
+</branch>
+<branch type="ELSE">
+<kw name="Set Variable" library="BuiltIn">
+<var>${VAR}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.013" endtime="20230829 15:01:04.013"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.012" endtime="20230829 15:01:04.013"/>
+</branch>
+<status status="NOT RUN" starttime="20230829 15:01:04.006" endtime="20230829 15:01:04.013"/>
+</if>
+<kw name="Set Variable" library="BuiltIn">
+<var>${VAR}</var>
+<arg>${${VAR}+1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230829 15:01:04.013" endtime="20230829 15:01:04.013"/>
+</kw>
+<status status="NOT RUN" starttime="20230829 15:01:04.005" endtime="20230829 15:01:04.013"/>
+</iter>
+<status status="NOT RUN" starttime="20230829 15:01:04.005" endtime="20230829 15:01:04.013"/>
+</for>
+<kw name="Close All Browsers">
+<status status="NOT RUN" starttime="20230829 15:01:04.014" endtime="20230829 15:01:04.014"/>
+</kw>
+<status status="PASS" starttime="20230829 15:01:03.198" endtime="20230829 15:41:07.085"/>
+</kw>
+<status status="PASS" starttime="20230829 15:01:03.197" endtime="20230829 15:41:07.087"/>
+</test>
+<status status="PASS" starttime="20230829 15:01:03.164" endtime="20230829 15:41:07.091"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
